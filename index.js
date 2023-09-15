@@ -1,6 +1,6 @@
-import fetch from "node-fetch";
+// import fetch from "node-fetch";
  /////sample program on Fetch
-const url = "https://jsonplaceholder.typicode.com/todos/1";
+// const url = "https://jsonplaceholder.typicode.com/todos/1";
 
 // const fetchPromise = fetch(url);
 
@@ -12,9 +12,14 @@ const url = "https://jsonplaceholder.typicode.com/todos/1";
 
 ///////////// Async & await
 
-const fetchPromise = async ()=>{
-    const res = await fetch(url)
-    const response = await res.json();
-    console.log(response)
-}
-fetchPromise()
+// const fetchPromise = async ()=>{
+//     const res = await fetch(url)
+//     const response = await res.json();
+//     console.log(response)
+// }
+// fetchPromise()
+
+/////////////// Module
+
+import message from "./person.js"
+console.log(message())
