@@ -1,12 +1,20 @@
 import fetch from "node-fetch";
-
+ /////sample program on Fetch
 const url = "https://jsonplaceholder.typicode.com/todos/1";
 
-const fetchPromise = fetch(url);
+// const fetchPromise = fetch(url);
 
-fetchPromise
-    .then((response) => response.json())
-    .then((response) => console.log (response));
-// fetch('https://jsonplaceholder.typicode.com/todos/1')
-//       .then(response => response.json())
-//       .then(json => console.log(json))
+// fetchPromise
+//     .then((response) => response.json())
+//     .then((response) => console.log (response));
+
+   
+
+///////////// Async & await
+
+const fetchPromise = async ()=>{
+    const res = await fetch(url)
+    const response = await res.json();
+    console.log(response)
+}
+fetchPromise()
